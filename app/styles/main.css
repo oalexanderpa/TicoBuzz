@@ -99,7 +99,6 @@ body {
   line-height: 3em;
   position: relative;
   top: 0.45em;
-  margin-right: 4em;
 }
 
 .MainMenu-logo{
@@ -117,7 +116,7 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover{
   color: #4285f4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .MainMenu-button{
