@@ -34,7 +34,8 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 980px;
+    padding: 0;
   }
 }
 .container-narrow > hr {
@@ -60,7 +61,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -101,8 +102,13 @@ body {
   top: 0.45em;
 }
 
-.MainMenu-logo{
-  width: 10em;
+.navbar-brand{
+  padding: 0.7em 0;
+}
+
+.nav.navbar-nav{
+  text-align: center;
+  font-size: 16px;
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -121,12 +127,25 @@ body {
 
 .MainMenu-button{
   color: #fff;
+  font-size: 1.2em;
   background: #f02323;
   border: none;
-  padding: 0.5em 0.7em;
+  padding: 0.3em 0.5em;
   border-radius: 0.5em;
   margin-top: 8px;
+
 }
+
+.MainMenu-smallButton{
+  color: #fff;
+  font-size: 1.8em;
+  background: #f02323;
+  border: none;
+  padding: 0em 0.5em;
+  border-radius: 0.5em;
+  margin-top: 7.1px;
+}
+
 
 .Tico{
   color: red;
