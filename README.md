@@ -7,8 +7,11 @@ Download:
 2. GIT: http://git-scm.com/downloads
 <br/>
 
-Install:
+Install from CMD (Executing as administrator):
 <br/>
 1. npm install -g bower
-    
-You have to run "npm install" and "bower install" to install all the dependencies of the project
+2. npm install (dependencies)
+3. bower install (dependencies)
+4. npm install -g grunt-cli
+
+Open local server: grunt serve
