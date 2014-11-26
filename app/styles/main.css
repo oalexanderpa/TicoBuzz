@@ -103,8 +103,8 @@ body {
   z-index: 1;
   text-align: center;
   border-style: solid;
-    border-color: transparent transparent #ddd;
-    border-width: 0.12em;
+  border-color: transparent transparent #ddd;
+  border-width: 0.12em;
 }
 
 .MainMenu-logoContainer{
@@ -172,12 +172,38 @@ body {
   text-align: center;
 }
 
+.contenido{
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+}
+
+.mainArticle{
+  padding-bottom: 1.6em;
+  border-bottom: dotted;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.mainArticle-Container{
+  display: block;
+  max-height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+
+.mainArticle-Image{
+  display: block;
+  max-height: 300px;
+  width: 100%;
+}
+
 .left-body{
-  margin-top: 3em;
+  margin-top: 0em;
 }
 
 .right-body{
-  margin-top: 3em;
+  margin-top: 0em;
 }
 
 .footer{
@@ -186,6 +212,71 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.labels{
+  position: absolute;
+  background-color: #F7FE2E;
+  padding: 1em 2em;
+}
+
+.vote-up{
+  margin: 0.4em 0;
+  padding: 0 0.9em;
+  background-color: #04B431;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.vote-down{
+  margin: 0.4em 0;
+  padding: 0 0.9em;
+  background-color: #f02323;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.comments{
+  margin: 0.4em 0;
+  padding: 0 0.9em;
+  background-color: gray;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.points{
+  color: gray;
+}
+
+
+.twitter-share{
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background-color: #33ccff;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  margin-left: 0.25em;
+  width: 77px;
+  float: right;
+}
+
+.fb-share{
+  margin: 0.5em 0.35em;
+  padding: 0.5em;
+  background-color: #4285f4;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  float: right;
+}
+
+.copyright{
+  padding: 0.5em 0;
+  text-align: center;
 }
 
 .Tico{
