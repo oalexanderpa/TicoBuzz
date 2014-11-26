@@ -1,30 +1,14 @@
 TicoBuzz
 ========
-<strong>First</strong>
-<br/>
-Download this repository
-<br/>
-<br/>
-<strong>Download & install:</strong>
+Download:
 <br/>
 1. NodeJS: http://nodejs.org/download/
 <br/>
 2. GIT: http://git-scm.com/downloads
 <br/>
 
-<strong>Open CMD (Execute as administrator). 
-<br/>
-From CMD go to the folder where you downloaded the repository (cd + path).</strong>
-<br/>
-<strong>Use the following commands to install all the necesary files:</strong>
+Install:
 <br/>
 1. npm install -g bower
-<br/>
-2. npm install
-<br/>
-3. bower install
-<br/>
-4. npm install -g grunt-cli
-<br/>
-<br/>
-<strong>Run local server from CMD:</strong> grunt serve
+    
+You have to run "npm install" and "bower install" to install all the dependencies of the project
