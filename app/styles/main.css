@@ -172,7 +172,11 @@ body {
   text-align: center;
 }
 
-.contenido{
+.left-body{
+  margin-top: 3em;
+}
+
+.right-body{
   margin-top: 3em;
 }
 
