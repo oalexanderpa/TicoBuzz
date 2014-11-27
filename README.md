@@ -1,5 +1,6 @@
-TicoBuzz
- ========		 ========
+<h1>TicoBuzz</h1>
+<br/>
+<br/>
 <strong>First</strong>
 <br/>
 Download this repository
@@ -21,10 +22,8 @@ From CMD go to the folder where you downloaded the repository (cd + path).</stro
 1. npm install -g bower	
 <br/>
 2. npm install 		
-<br/>
 3. bower install
-<br/>
- 4. npm install -g grunt-cli
+4. npm install -g grunt-cli
 <br/>
 <br/>
 <strong>Run local server from CMD:</strong> grunt serve
