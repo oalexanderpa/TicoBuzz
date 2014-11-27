@@ -26,13 +26,15 @@ body {
 /* Custom page footer */
 .footer {
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  padding: 0;
+  text-align: center;
+  height: 151px;
 }
 
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 980px;
+    max-width: 940px;
     padding: 0;
   }
 }
@@ -173,8 +175,9 @@ body {
 }
 
 .contenido{
-  margin-top: 3.5em;
+  margin-top: 3em;
   margin-bottom: 1.5em;
+  max-width: 940px;
 }
 
 .mainArticle{
@@ -182,15 +185,19 @@ body {
   border-bottom: dotted;
   border-width: 1px;
   border-color: gray;
+  max-width: 500px;
+  margin-top: 2.1em;
 }
 
-.mainArticle-Container{
+.mainArticle-ImageContainer{
   display: block;
   max-height: 400px;
-  width: 100%;
   position: relative;
 }
 
+.mainArticle-Description{
+  margin-top: 0.13em;
+}
 
 .mainArticle-Image{
   display: block;
@@ -199,25 +206,96 @@ body {
 }
 
 .left-body{
+  padding: 0;
   margin-top: 0em;
+  margin-right: 2em;
+  max-width: 600px;
 }
 
 .right-body{
+  padding: 0;
   margin-top: 0em;
+  max-width: 300px;
 }
 
-.footer{
-  text-align: center;
+#mc-embedded-subscribe-form{
+  margin-top: 0.7em;
+  padding-bottom: 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.suscribase{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.popularArticle{
+  padding-bottom: 1.6em;
+  border-bottom: dotted;
+  border-width: 1px;
+  border-color: gray;
+  max-width: 500px;
+}
+
+.popularArticle-ImageContainer{
+  display: block;
+  max-height: 400px;
+  width: 100%;
   position: relative;
-  left: 0;
-  right: 0;
-  bottom: 0;
+}
+
+.popularArticle-Image{
+  display: block;
+  max-height: 150px;
+  width: 100%;
+}
+
+
+.homeArticle{
+  padding-bottom: 1.6em;
+  border-bottom: dotted;
+  border-width: 1px;
+  border-color: gray;
+  max-width: 500px;
+}
+
+.homeArticle-ImageContainer{
+  display: block;
+  max-height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.homeArticle-Image{
+  display: block;
+  max-height: 300px;
+  width: 100%;
+}
+
+.populares{
+  color: #4285f4;
+  margin-top: 0;
 }
 
 .labels{
+  color: white;
   position: absolute;
-  background-color: #F7FE2E;
+  background-color:rgba(240, 35, 35, 0.85);
   padding: 1em 2em;
+}
+
+.labels2{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  padding: 0.5em 0.5em;
+  max-width: 500px;
+  max-height: 187px;
+  margin: 0;
 }
 
 .vote-up{
@@ -274,9 +352,23 @@ body {
   float: right;
 }
 
+.cargar{
+  margin-top: 2em;
+  border: none;
+}
+
+.footerLogo{
+  width: 15em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-bottom: 0.5em;
+}
+
 .copyright{
   padding: 0.5em 0;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .Tico{
