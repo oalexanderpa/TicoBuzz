@@ -28,7 +28,7 @@ body {
   color: #777;
   padding: 0;
   text-align: center;
-  height: 151px;
+  max-height: 150px;
 }
 
 /* Customize container */
