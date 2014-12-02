@@ -238,6 +238,8 @@ body {
   border-width: 1px;
   border-color: gray;
   max-width: 500px;
+  margin-top: 2.1em;
+  text-align: center;
 }
 
 .popularArticle-ImageContainer{
@@ -252,7 +254,6 @@ body {
   max-height: 150px;
   width: 100%;
 }
-
 
 .homeArticle{
   padding-bottom: 1.6em;
