@@ -38,12 +38,15 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header" >
-            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          	
+          	<!-- Botón de menú en móviles -->
+            <button class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+
             <a class="navbar-brand" href="#" style="margin-left: auto;margin-right: auto;">
               <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
             </a>
@@ -55,18 +58,19 @@
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
+
           <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li ng-class="{ active: isActive('/')}">
+              <li class="MainMenu-item" ng-class="{ active: isActive('/')}">
                 <a href="/#/Articulos"><span class="Tico">Tico</span>Articulos</a>
               </li>
-              <li>
+              <li class="MainMenu-item">
                 <a href="/#/Videos"><span class="Tico">Tico</span>Videos</a>
               </li>
-              <li>
+              <li class="MainMenu-item">
                 <a href="/#/Quizes"><span class="Tico">Tico</span>Quizes</a>
               </li>
-              <li>
+              <li class="MainMenu-item">
                 <a href="/#/QuejeseAqui">Quejese Aqui</a>
               </li>
             </ul>
@@ -95,7 +99,7 @@
       <div ng-view=""></div>
 	
     
-      <div class="col-xs-12 col-sm-4 col-lg-4 right-body">
+      <div class="col-xs-12 col-sm-4 col-lg-4 bodyRight">
         <article class="popularArticle">
         	<h2 class="populares">Populares</h2>
               <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>

@@ -23,12 +23,17 @@ body {
   padding-bottom: 19px;
 }
 
+.container-fluid{
+  height: 50px;
+}
+
 /* Custom page footer */
 .footer {
   color: #777;
   padding: 0;
   text-align: center;
   max-height: 150px;
+  margin-bottom: 0.4em;
 }
 
 /* Customize container */
@@ -36,6 +41,7 @@ body {
   .container {
     max-width: 940px;
     padding: 0;
+    margin-bottom: 1em;
   }
 }
 .container-narrow > hr {
@@ -121,10 +127,14 @@ body {
   padding: 0.7em 0;
 }
 
+#bs-example-navbar-collapse-1{
+  text-align: center;
+  height: 50px;
+}
+
 .nav.navbar-nav{
   font-size: 16px;
-  min-height: 50%;
-  max-height: 50%;
+  display:inline-table;
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -159,7 +169,8 @@ body {
   border: none;
   padding: 0em 0.5em;
   border-radius: 0.5em;
-  margin-top: 7.1px;
+  margin-top: 8px;
+  margin-right: 8px;
 }
 
 .social-bar{
@@ -205,22 +216,17 @@ body {
   width: 100%;
 }
 
-.left-body{
+.bodyLeft{
   padding: 0;
   margin-top: 0em;
   margin-right: 2em;
   max-width: 600px;
 }
 
-.right-body{
+.bodyRight{
   padding: 0;
   margin-top: 0em;
   max-width: 300px;
-}
-
-#mc-embedded-subscribe-form{
-  margin-top: 0.7em;
-  padding-bottom: 0;
 }
 
 .container-fluid{
@@ -238,7 +244,7 @@ body {
   border-width: 1px;
   border-color: gray;
   max-width: 500px;
-  margin-top: 2.1em;
+  margin-top: 1.4em;
   text-align: center;
 }
 
@@ -375,4 +381,5 @@ body {
 .Tico{
   color: red;
 }
+
 /*Fin estilos del nav bar*/
