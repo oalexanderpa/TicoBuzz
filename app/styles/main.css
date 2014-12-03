@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 50px;
+  padding-top: 46px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -24,7 +24,7 @@ body {
 }
 
 .container-fluid{
-  height: 50px;
+  height: 46px;
 }
 
 /* Custom page footer */
@@ -41,7 +41,6 @@ body {
   .container {
     max-width: 940px;
     padding: 0;
-    margin-bottom: 1em;
   }
 }
 .container-narrow > hr {
@@ -124,12 +123,12 @@ body {
 }
 
 .navbar-brand{
-  padding: 0.7em 0;
+  padding: 0.58em 0;
 }
 
 #bs-example-navbar-collapse-1{
   text-align: center;
-  height: 50px;
+  height: 46px;
 }
 
 .nav.navbar-nav{
@@ -158,7 +157,7 @@ body {
   border: none;
   padding: 0.3em 0.5em;
   border-radius: 0.5em;
-  margin-top: 8px;
+  margin-top: 6px;
 
 }
 
@@ -169,7 +168,7 @@ body {
   border: none;
   padding: 0em 0.5em;
   border-radius: 0.5em;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-right: 8px;
 }
 
@@ -177,8 +176,8 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  padding: 1em;
-  height: 50px;
+  padding: 0.84em;
+  height: 46px;
   border-style: solid;
   border-color: transparent transparent #ddd;
   border-width: 0.12em;
@@ -197,7 +196,7 @@ body {
   border-width: 1px;
   border-color: gray;
   max-width: 500px;
-  margin-top: 2.1em;
+  margin-top: 1.5em;
 }
 
 .mainArticle-ImageContainer{
@@ -244,7 +243,7 @@ body {
   border-width: 1px;
   border-color: gray;
   max-width: 500px;
-  margin-top: 1.4em;
+  margin-top: 0.8em;
   text-align: center;
 }
 
