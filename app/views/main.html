@@ -12,53 +12,20 @@
         </article>
 
 
-      <article class="homeArticle">
-        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2>
+      <article class="homeArticle" ng-repeat="post in posts">
+        <a ng-href="#/{{post.tipo | lowercase}}/{{post.titulo | titulo}}"><figcaption class="homeArticle-Description"><h2>{{post.titulo}}</h2></a>
         </figcaption>
           <figure class="homeArticle-ImageContainer">
             <label class="labels">
-              <h3>Artículo</h3>
+              <h3>{{post.tipo}}</h3>
             </label>
-            <img class="homeArticle-Image" src="images/corcovado.jpg">
+            <img class="homeArticle-Image" src="{{post.imagen}}">
           </figure>
-          <span class="points">8569 puntos - 46 comentarios</span>
+          <span class="points">{{post.puntos}} puntos - {{post.comentarios.length}} comentarios</span>
           </br>
           <button class="vote-up">↑</button>
           <button class="vote-down">↓</button>
           <button class="comments">Comentarios</button>
-          <button class="twitter-share">Twitter</button>
-          <button class="fb-share">Facebook</button>
-      </article>
-
-      <article class="homeArticle">
-        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2></figcaption>
-          <figure class="homeArticle-ImageContainer">
-            <label class="labels">
-              <h3>Quiz</h3>
-            </label>
-            <img class="homeArticle-Image" src="images/corcovado.jpg">
-          </figure>
-          <span class="points">8569 puntos - 46 comentarios</span>
-          </br>
-          <button class="vote-up">↑</button>
-          <button class="vote-down">↓</button>
-          <button class="comments">Comentarios</button>
-          <button class="twitter-share">Twitter</button>
-          <button class="fb-share">Facebook</button>
-      </article>
-
-      <article class="homeArticle">
-        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2></figcaption>
-          <figure class="homeArticle-ImageContainer">
-            <label class="labels">
-              <h3>Video</h3>
-            </label>
-            <img class="homeArticle-Image" src="images/corcovado.jpg">
-          </figure>
-          <span class="points">8569 puntos - 46 comentarios</span>
-          </br>
-          <button class="vote-up">↑</button>
-          <button class="vote-down">↓</article<button class="comments">Comentarios</button>
           <button class="twitter-share">Twitter</button>
           <button class="fb-share">Facebook</button>
       </article>
