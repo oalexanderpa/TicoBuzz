@@ -12,6 +12,7 @@ angular.module('ticoBuzzApp')
     $scope.posts = [{
 		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
 		tipo:'Articulo',
+		label:'Articulo',
 		puntos:'8569',
 		comentarios:[
 			'random comment',
@@ -23,6 +24,7 @@ angular.module('ticoBuzzApp')
 	}, {
 		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
 		tipo:'Quiz',
+		label:'Quiz',
 		puntos:'8569',
 		comentarios:[
 			'random comment',
@@ -34,6 +36,7 @@ angular.module('ticoBuzzApp')
 	}, {
 		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
 		tipo:'Video',
+		label:'Video',
 		puntos:'8569',
 		comentarios:[
 			'random comment',

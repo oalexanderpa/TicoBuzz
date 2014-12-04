@@ -16,7 +16,7 @@
         <a ng-href="#/{{post.tipo | lowercase}}/{{post.titulo | titulo}}"><figcaption class="homeArticle-Description"><h2>{{post.titulo}}</h2></a>
         </figcaption>
           <figure class="homeArticle-ImageContainer">
-            <label class="labels">
+            <label ng-class="post.label">
               <h3>{{post.tipo}}</h3>
             </label>
             <img class="homeArticle-Image" src="{{post.imagen}}">
