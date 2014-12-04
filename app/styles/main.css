@@ -239,6 +239,7 @@ body {
 
 .popularArticle{
   padding-bottom: 1.6em;
+  margin-bottom: 1.35em;
   border-bottom: dotted;
   border-width: 1px;
   border-color: gray;
@@ -372,7 +373,7 @@ body {
 }
 
 .copyright{
-  padding: 0.5em 0;
+  padding: 0 0 0.5em;
   text-align: center;
   margin-bottom: 0;
 }
