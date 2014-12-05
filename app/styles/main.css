@@ -1,6 +1,7 @@
 /* Space out content a bit */
 body {
   padding-top: 46px;
+  margin-bottom: 1em;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -132,7 +133,7 @@ body {
 
 .nav.navbar-nav{
   font-size: 16px;
-  display:inline-table;
+
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -180,6 +181,7 @@ body {
   border-bottom: 1px solid #ddd;
   text-align: center;
   margin-top: 2px;
+  outline: none;
 }
 
 .contenido{
@@ -217,6 +219,7 @@ body {
   padding: 0;
   margin-top: 1.2em;
   margin-right: 2em;
+  margin-bottom: 1em;
   max-width: 600px;
 }
 

@@ -39,4 +39,17 @@ angular
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     };
-  }]);
+  }])
+    .controller('PopularesController', function ($scope) {
+    $scope.populares = [{
+      titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
+      imagen:'images/corcovado.jpg'
+    }, {
+      titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
+      imagen:'images/corcovado.jpg'
+    }, {
+      titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
+      imagen:'images/corcovado.jpg'
+      }];
+    });
+  
