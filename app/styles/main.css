@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 46px;
+  padding-top: 50px;
   margin-bottom: 1em;
 }
 
@@ -128,7 +128,6 @@ body {
 
 #bs-example-navbar-collapse-1{
   text-align: center;
-  height: 46px;
 }
 
 .nav.navbar-nav{
