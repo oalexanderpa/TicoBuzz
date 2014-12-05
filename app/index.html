@@ -96,7 +96,7 @@ window.twttr = (function (d, s, id) {
     <div class="container">
 		<div class="row">
 			<div class="col-xs-12 social-bar" >
-				<p class="slogan hidden-xs">TB - Contenido que todo tico quiere ver y compartir.</p>
+				<span class="slogan hidden-xs">TB - Contenido que todo tico quiere ver y compartir.</span>
 				<div class="fb-like" data-href="https://www.facebook.com/TicoBuzz" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				<a class="twitter-follow-button"
 				  href="https://twitter.com/ticobuzz"
@@ -119,13 +119,13 @@ window.twttr = (function (d, s, id) {
       <div class="col-xs-12 col-sm-4 col-lg-4 bodyRight" ng-controller="PopularesController">
         <h2 class="populares">Populares</h2>
         <article class="popularArticle" ng-repeat="popular in populares">
-              <figcaption class="popularArticle-Description">
-                <h4>{{popular.titulo}}
-                </h4>
-              </figcaption>
                 <figure class="popularArticle-ImageContainer">
-                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                  <img class="popularArticle-Image" src="{{popular.imagen}}">
                 </figure>
+                <figcaption class="popularArticle-Description">
+                    <h4>{{popular.titulo}}
+                    </h4>
+                </figcaption>
         </article>
                
 

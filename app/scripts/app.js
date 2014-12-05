@@ -45,11 +45,11 @@ angular
       titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
       imagen:'images/corcovado.jpg'
     }, {
-      titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
-      imagen:'images/corcovado.jpg'
+      titulo:'¿Qué personaje de la historia de Costa Rica eres?',
+      imagen:'images/juansantamaria.jpg'
     }, {
-      titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
-      imagen:'images/corcovado.jpg'
+      titulo:'Los 5 momentos de infarto de la sele en el Mundial Brasil 2014',
+      imagen:'images/costaricagrecia.jpg'
       }];
     });
   

@@ -16,8 +16,7 @@
         <a ng-href="#/{{post.tipo | lowercase}}/{{post.titulo | titulo}}">
           <figcaption class="homeArticle-Description"><h2>{{post.titulo}}</h2>
           </figcaption>
-        </a>
-          
+        </a> 
           <figure class="homeArticle-ImageContainer">
             <label ng-class="post.label">
               <h3>{{post.tipo}}</h3>
@@ -29,8 +28,14 @@
           <button class="vote-up">↑</button>
           <button class="vote-down">↓</button>
           <button class="comments">Comentarios</button>
-          <button class="twitter-share">Twitter</button>
-          <button class="fb-share">Facebook</button>
+          <button class="twitterShare">
+          <p class="twitterShare-description">Twitter</p>
+            <img class="twitterShare-image" src="/images/twittericon.PNG" width="22" height="17" alt="submit" />
+          </button>
+          <button class="facebookShare">
+            <p class="facebookShare-description">Facebook</p>
+            <img class="facebookShare-image" src="/images/facebookicon.PNG" width="13" height="18" alt="submit" />
+          </button>
       </article>
 
         <button class="cargar"><p>... Cargando más artículos ...</p></button>

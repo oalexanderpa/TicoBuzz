@@ -22,7 +22,7 @@ angular.module('ticoBuzzApp')
 		],
 		imagen:'images/corcovado.jpg'
 	}, {
-		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
+		titulo:'¿Qué personaje de la historia de Costa Rica eres?',
 		tipo:'Quiz',
 		label:'labelQuiz',
 		puntos:'8569',
@@ -32,9 +32,9 @@ angular.module('ticoBuzzApp')
 			'random comment',
 			'random comment'
 		],
-		imagen:'images/corcovado.jpg'
+		imagen:'images/juansantamaria.jpg'
 	}, {
-		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
+		titulo:'Los 5 momentos de infarto de la sele en el Mundial Brasil 2014',
 		tipo:'Video',
 		label:'labelVideo',
 		puntos:'8569',
@@ -44,7 +44,7 @@ angular.module('ticoBuzzApp')
 			'random comment',
 			'random comment'
 		],
-		imagen:'images/corcovado.jpg'
+		imagen:'images/costaricagrecia.jpg'
 	}];
   })
   .filter('titulo', function() {
