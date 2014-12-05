@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="ticoBuzzApp">
+
+<!-- Script para Facebook like -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=303298109877032&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarController">
+      <div class="container-fluid">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header" >
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="margin-left: auto;margin-right: auto;">
+              <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
+            </a>
+            <button class="MainMenu-smallButton pull-right hidden-sm hidden-md hidden-lg">+</button>
+          </div>
+          
+          <div class="navbar-header pull-right hidden-xs">
+              <button class="MainMenu-button">+ Crear</button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ng-class="{ active: isActive('/')}">
+                <a href="/#/Articulos"><span class="Tico">Tico</span>Articulos</a>
+              </li>
+              <li>
+                <a href="/#/Videos"><span class="Tico">Tico</span>Videos</a>
+              </li>
+              <li>
+                <a href="/#/Quizes"><span class="Tico">Tico</span>Quizes</a>
+              </li>
+              <li>
+                <a href="/#/QuejeseAqui">Quejese Aqui</a>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="container">
+    <div class="container">
+		<div class="row">
+			<div class="col-xs-12 social-bar" >
+				<div class="fb-like" data-href="https://www.facebook.com/TicoBuzz" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Comienza el body lado izquierdo -->
+<div class="container-fluid contenido">
+  <div class="container">
+ 	  <div class="col-xs-12 col-sm-8 col-lg-8 left-body">
+
+       <section class="mainArticle">
+          <figure class="mainArticle-ImageContainer">
+            <label class="labels2">
+              <h2 class="mainArticle-Description">23 lugares para descubrir en Costa Rica antes de pensar en viajar al extranjero.</h2>
+            </label>
+            <img class="mainArticle-Image" src="images/flamingo.jpg">
+          </figure>
+      </section>
+
+
+      <section class="homeArticle">
+        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2></figcaption>
+          <figure class="homeArticle-ImageContainer">
+            <label class="labels">
+              <h3>Artículo</h3>
+            </label>
+            <img class="homeArticle-Image" src="images/corcovado.jpg">
+          </figure>
+          <span class="points">8569 puntos - 46 comentarios</span>
+          </br>
+          <button class="vote-up">↑</button>
+          <button class="vote-down">↓</button>
+          <button class="comments">Comentarios</button>
+          <button class="twitter-share">Twitter</button>
+          <button class="fb-share">Facebook</button>
+      </section>
+
+      <section class="homeArticle">
+        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2></figcaption>
+          <figure class="homeArticle-ImageContainer">
+            <label class="labels">
+              <h3>Quiz</h3>
+            </label>
+            <img class="homeArticle-Image" src="images/corcovado.jpg">
+          </figure>
+          <span class="points">8569 puntos - 46 comentarios</span>
+          </br>
+          <button class="vote-up">↑</button>
+          <button class="vote-down">↓</button>
+          <button class="comments">Comentarios</button>
+          <button class="twitter-share">Twitter</button>
+          <button class="fb-share">Facebook</button>
+      </section>
+
+      <section class="homeArticle">
+        <figcaption class="homeArticle-Description"><h2>10 lugares que debes visitar antes de pensar en viajar a otro país</h2></figcaption>
+          <figure class="homeArticle-ImageContainer">
+            <label class="labels">
+              <h3>Video</h3>
+            </label>
+            <img class="homeArticle-Image" src="images/corcovado.jpg">
+          </figure>
+          <span class="points">8569 puntos - 46 comentarios</span>
+          </br>
+          <button class="vote-up">↑</button>
+          <button class="vote-down">↓</button>
+          <button class="comments">Comentarios</button>
+          <button class="twitter-share">Twitter</button>
+          <button class="fb-share">Facebook</button>
+      </section>
+
+        <div><button class="cargar"><p>... Cargando más artículos ...</p></button>
+        </div>
+      
+
+   	</div>
+    <!-- Comienza el body lado derecho -->
+    <div class="container">
+   		<div class="col-xs-12 col-sm-4 col-lg-4 right-body">
+
+        <!-- Begin MailChimp Signup Form -->         <link href="//cdn-
+images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet"
+type="text/css">         <style type="text/css">
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-
+serif;  width:297px;}           /* Add your own MailChimp form style overrides
+in your site stylesheet or in this style block.              We recommend
+moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>         <div id="mc_embed_signup">         <form
+action="//TicoBuzz.us8.list-
+manage.com/subscribe/post?u=d9aeb61a943ee0813af6dea4b&amp;id=e9aff4223e"
+method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-
+form" class="validate" target="_blank" novalidate>             <div
+id="mc_embed_signup_scroll">           <label for="mce-EMAIL"><h3 class="suscribase">¡Suscríbase a
+TicoBuzz!</h3></label>           <input type="email" value="" name="EMAIL"
+class="email" id="mce-EMAIL" placeholder="correo electrónico" required>
+<!-- real people should not fill this in and expect good things - do not
+remove this or risk form bot signups-->             <div style="position:
+absolute; left: -5000px;"><input type="text"
+name="b_d9aeb61a943ee0813af6dea4b_e9aff4223e" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Suscribirme" name="subscribe" background-color="red"
+id="mc-embedded-subscribe" class="button"></div>             </div>
+</form>         </div>
+
+<!--End mc_embed_signup-->
+
+
+      <h2 class="populares">Populares</h2>
+   			<section class="popularArticle">
+              <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                </figure>
+                </section>
+                
+                <section class="popularArticle">
+              <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                </figure>
+                </section>
+
+                <section class="popularArticle">
+              <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                </figure>
+                </section>
+
+              <section class="popularArticle">
+              <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                </figure>
+                </section>
+
+                <section class="popularArticle">
+              <figcaption class="popularArticle-Description"><h4>10 lugares que debes visitar antes de pensar en viajar a otro país</h4></figcaption>
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="images/corcovado.jpg">
+                </figure>
+                </section>
+
+        <div class="container-fluid">
+          <footer class="footer">
+            <p class="copyright">Copyright © 2014 TicoBuzz </p> 
+            
+              <img src="images/logo.png" class="footerLogo">
+          
+            
+            <a href="http://www.yahoo.com">Publicidad</a> • 
+            <a href="http://www.yahoo.com">Contacto</a> •
+            <a href="http://www.yahoo.com">Nuestro Equipo</a>
+            </br>
+            <a href="http://www.yahoo.com">Privacy</a> •
+            <a href="http://www.yahoo.com">Terms</a> 
+
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- <div class="container">
+      <div ng-view=""></div>
+   </div> -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
