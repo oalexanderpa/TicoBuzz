@@ -134,6 +134,10 @@ body {
   padding: 0.58em 0;
 }
 
+.navbar-inner{
+  height: 46px;
+}
+
 #bs-example-navbar-collapse-1{
   text-align: center;
 }
@@ -142,6 +146,8 @@ body {
   font-size: 16px;
   list-style: none;
   text-align: center;
+  float: none;
+  display: inline-block;
 }
 
 .navbar-default .navbar-nav > li > a,
