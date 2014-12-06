@@ -25,18 +25,24 @@
           </figure>
           <span class="points">{{post.puntos}} puntos - {{post.comentarios.length}} comentarios</span>
           </br>
-          <button class="vote-up">↑</button>
-          <button class="vote-down">↓</button>
-          <button class="comments">Comentarios</button>
+          <button class="vote-up">
+            <img class="facebookShare-image" src="/images/like.PNG" width="27px" height="30" alt="submit" />
+          </button>
+          <button class="vote-down">
+           <img class="facebookShare-image" src="/images/unlike.PNG" width="27px" height="30" alt="submit" />
+          </button>
+          <button class="comments">
+            <img class="facebookShare-image" src="/images/bubble.svg" width="27px" height="30" alt="submit" />
+          </button>
           <button class="twitterShare">
-          <p class="twitterShare-description">Twitter</p>
-            <img class="twitterShare-image" src="/images/twittericon.PNG" width="22" height="17" alt="submit" />
+          <p class="twitterShare-description hidden-xs">Twitter</p>
+            <img class="twitterShare-image hidden-xs" src="/images/twittericon.PNG" width="22" height="17" alt="submit" />
+            <img class="twitterShare-imageMobile visible-xs" src="/images/twittericon.PNG" width="22" height="17" alt="submit" />
           </button>
           <button class="facebookShare">
-            <p class="facebookShare-description">Facebook</p>
-            <img class="facebookShare-image" src="/images/facebookicon.PNG" width="13" height="18" alt="submit" />
+            <p class="facebookShare-description hidden-xs">Facebook</p>
+            <img class="facebookShare-image hidden-xs" src="/images/facebookicon.PNG" width="11" height="18" alt="submit" />
+            <img class="facebookShare-imageMobile visible-xs" src="/images/facebookicon.PNG" width="11" height="18" alt="submit" />
           </button>
       </article>
-
-        <button class="cargar"><p>... Cargando más artículos ...</p></button>
 </div>
