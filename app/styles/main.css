@@ -1,7 +1,8 @@
 /* Space out content a bit */
 body {
-  padding-top: 50px;
+  padding-top: 46px;
   margin-bottom: 1em;
+  margin-top: 25px;
 
 }
 
@@ -127,7 +128,12 @@ body {
   margin: 0;
   line-height: 3em;
   position: relative;
-  top: 0.45em;
+  top: 1em;
+}
+
+.navbar{
+  height: 46px;
+  min-height: 46px;
 }
 
 .navbar-brand{
@@ -140,6 +146,7 @@ body {
 
 #bs-example-navbar-collapse-1{
   text-align: center;
+  height: 46px;
 }
 
 .nav.navbar-nav{
@@ -232,7 +239,7 @@ body {
 
 .bodyLeft{
   padding: 0;
-  margin-top: 1.2em;
+  margin-top: 0;
   margin-right: 2em;
   max-width: 600px;
 }
@@ -242,9 +249,10 @@ body {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  float: none;
+  display: inline-block;
 
 }
-
 
 .suscribase{
   padding-bottom: 0;
@@ -294,12 +302,56 @@ body {
   width: 100%;
 }
 
+.articuloIndividual-Contenido{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.articuloIndividual-Compartir{
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  display: inline-block;
+  background-color: lightgray;
+  padding: 2px 0 15px 0;
+}
+
+.articuloIndividual-CompartirLabel{
+  margin-top: 0;
+}
+
+.articuloIndividual-CompartirTwitter{
+  font-size: 18px;
+  margin: 0.6em 0 0 0;
+  padding: 0.5em 0 0.5em 0.7em;
+  background-color: #00ACED;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  float: none;
+  width: 260px;
+}
+
+.articuloIndividual-CompartirFacebook{
+  font-size: 18px;
+  margin: 0.6em 0 0;
+  padding: 0.5em 0em 0.5em 0.4em;
+  background-color: #3B5998;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  float: none;
+  width: 260px;
+}
+
 .populares{
   color: #3B5998;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 27px;
   padding-bottom: 0.7em;
   border-bottom: solid 1px #F89B9B;
+  text-align: center;
 }
 
 .labelArticulo{
@@ -309,6 +361,7 @@ body {
    padding: 24px 10px;
   height: 74px;
   width: 136px;
+  text-align: center;
 }
 
 .labelQuiz{
@@ -318,6 +371,7 @@ body {
   padding: 24px 10px;
   height: 74px;
   width: 136px;
+  text-align: center;
 }
 
 .labelVideo{
@@ -327,6 +381,7 @@ body {
   padding: 24px 10px;
   height: 74px;
   width: 136px;
+  text-align: center;
 }
 
 .labels2{
@@ -462,6 +517,10 @@ margin-right: 6px;
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.articuloIndividual-Comentarios{
+  margin-bottom: 20px;
 }
 
 .Tico{
