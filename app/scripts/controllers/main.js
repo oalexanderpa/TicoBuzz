@@ -13,6 +13,7 @@ angular.module('ticoBuzzApp')
 		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
 		tipo:'Articulo',
 		label:'labelArticulo',
+		icono:'glyphicon glyphicon-list-alt',
 		puntos:'8569',
 		comentarios:[
 			'random comment',
@@ -25,6 +26,7 @@ angular.module('ticoBuzzApp')
 		titulo:'¿Qué personaje de la historia de Costa Rica eres?',
 		tipo:'Quiz',
 		label:'labelQuiz',
+		icono:'glyphicon glyphicon-tasks',
 		puntos:'8569',
 		comentarios:[
 			'random comment',
@@ -37,6 +39,7 @@ angular.module('ticoBuzzApp')
 		titulo:'Los 5 momentos de infarto de la sele en el Mundial Brasil 2014',
 		tipo:'Video',
 		label:'labelVideo',
+		icono:'glyphicon glyphicon-film',
 		puntos:'8569',
 		comentarios:[
 			'random comment',

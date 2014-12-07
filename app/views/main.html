@@ -19,7 +19,8 @@
         </a> 
           <figure class="homeArticle-ImageContainer">
             <label ng-class="post.label">
-              <h3>{{post.tipo}}</h3>
+              <span ng-class="post.icono" aria-hidden="true"></span>
+              {{post.tipo}}
             </label>
             <img class="homeArticle-Image" src="{{post.imagen}}">
           </figure>
