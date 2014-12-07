@@ -190,7 +190,7 @@ body {
   font-size: 1.5em;
   background: #f02323;
   border: none;
-  padding: 0.2em 0.3em 0em;
+  padding: 0.1em 0.3em;
   border-radius: 0.5em;
   margin-top: 6px;
   margin-right: 6px;
@@ -404,37 +404,44 @@ body {
   margin: 0;
 }
 
+.sharebar{
+  max-height: 50px;
+}
+
 .vote-up{
-  margin: 0.4em 3px 0.4em 0;
-  padding: 0 2px;
-  background-color: #8FFF8F;
+  margin: 0.4em 3px 0 0;
+  padding: 0 ;
+  background-color: lightgray;
   border: solid 1px #ddd;
   border-radius: 5px;
   font-size: 1.5em;
   color: white;
-  height: 34px;
+  height: 34px; 
+  width: 45px;
 }
 
 .vote-down{
   margin: 0.4em 3px 0 0;
-  padding: 0 2px;
-  background-color: #FA9999;
-  border: solid 1px #ddd;
-  border-radius: 5px;
-  font-size: 1.5em;
-  color: white;
-  height: 34px;
-}
-
-.comments{
-  margin: 0.4em 0;
-  padding: 0 2px;
+  padding: 0;
   background-color: lightgray;
   border: solid 1px #ddd;
   border-radius: 5px;
   font-size: 1.5em;
   color: white;
   height: 34px;
+  width: 45px;
+}
+
+.comments{
+  margin: 0.4em 0;
+  padding: 0;
+  background-color: lightgray;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: white;
+  height: 34px;
+  width: 45px;
 }
 
 .points{
@@ -464,7 +471,7 @@ margin:1px 6px;
 display: inline-block;
 float: left;
 padding: 0px;
-margin:1px 11.5px;
+margin: 1.5px 11.5px;
 }
 
 .twitterShare-description{
@@ -530,6 +537,15 @@ margin-right: 6px;
 
 .articuloIndividual-Comentarios{
   margin-bottom: 20px;
+}
+
+.gris-oscuro{
+  color: #585454;
+}
+
+.mini-iconos{
+  font-size: 25px;
+  width: 40px;
 }
 
 .Tico{
