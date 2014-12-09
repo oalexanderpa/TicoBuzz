@@ -47,11 +47,11 @@ window.twttr = (function (d, s, id) {
     <!-- Add your site or application content here -->
     
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarController">
-      <div class="navbar-inner">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header" >	
           	<!-- Botón de menú en móviles -->
+
             <button class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <i class="fa fa-bars"></i>
               <!-- <span class="sr-only">Toggle navigation</span>
@@ -59,7 +59,8 @@ window.twttr = (function (d, s, id) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> -->
             </button>
-            <a class="navbar-brand" href="#" style="margin-left: auto;margin-right: auto;">
+           
+            <a class="navbar-brand visible-xs" href="#/" style="margin-left: auto;margin-right: auto;">
               <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
             </a>
 
@@ -92,6 +93,9 @@ window.twttr = (function (d, s, id) {
           <!-- Collect the nav links, forms, and other content for toggling -->
 
           <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ 			<a class="navbar-brand" href="#/" style="margin-left: auto;margin-right: auto;">
+              <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
+            </a>
             <ul class="nav navbar-nav">
               <li class="MainMenu-item" ng-class="{ active: isActive('/')}">
                 <a href="/#/Articulos"><span class="Tico">Tico</span>Articulos</a>
@@ -102,9 +106,9 @@ window.twttr = (function (d, s, id) {
               <li class="MainMenu-item">
                 <a href="/#/Videos"><span class="Tico">Tico</span>Videos</a>
               </li>
-              <li class="MainMenu-item">
+              <!-- <li class="MainMenu-item">
                 <a href="/#/QuejeseAqui">Quejese Aqui</a>
-              </li>
+              </li> -->
             </ul>
 
             <button class="btn btn-default dropdown-toggle MainMenu-button hidden-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -138,8 +142,7 @@ window.twttr = (function (d, s, id) {
   </div>
 </div> -->
 
-        </div>
-      </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
     </nav>
 
 <div class="container">
