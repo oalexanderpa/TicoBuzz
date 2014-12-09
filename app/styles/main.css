@@ -1,10 +1,12 @@
 /* Space out content a bit */
 body {
   font-size: 16px;
+}
+
+.body-spacing{
   padding-top: 46px;
   margin-bottom: 1em;
   margin-top: 25px;
-
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -175,6 +177,7 @@ body {
   color: #4285f4;
   text-decoration: none;
 }
+/*Fin estilos del nav bar*/
 
 .MainMenu-item a{
   height: 46px;
@@ -590,4 +593,10 @@ margin-right: 6px;
   color: #f02323;
 }
 
-/*Fin estilos del nav bar*/
+/*Share Bar Styles*/
+.sharebar-scrolled{
+  position : fixed;
+  top : 0;
+  background-color: white;
+  width: 600px;
+}
