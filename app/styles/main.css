@@ -392,6 +392,10 @@ body {
   width: 260px;
 }
 
+.articuloIndividual-Imagen{
+  padding-top: 53px;
+}
+
 .populares{
   font-size: 1.8em;
   color: #3B5998;
@@ -444,10 +448,6 @@ body {
   max-width: 500px;
   max-height: 200px;
   margin: 0;
-}
-
-.sharebar{
-  max-height: 50px;
 }
 
 .vote-up{
@@ -594,9 +594,12 @@ margin-right: 6px;
 }
 
 /*Share Bar Styles*/
+.sharebar{
+  max-height: 50px;
+}
+
 .sharebar-scrolled{
   position : fixed;
   top : 0;
   background-color: white;
-  width: 100%;
 }
