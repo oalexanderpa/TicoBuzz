@@ -16,29 +16,30 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
+
   <body id="body" ng-app="ticoBuzzApp" class="body-spacing">
 
 <!-- Script para Facebook like -->
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=303298109877032&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=303298109877032&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Script para Twitter follow -->
-<script type="text/javascript">
-window.twttr = (function (d, s, id) {
-  var t, js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src= "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-}(document, "script", "twitter-wjs"));
-</script>
+	<script type="text/javascript">
+	window.twttr = (function (d, s, id) {
+	var t, js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src= "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+	return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+	}(document, "script", "twitter-wjs"));
+	</script>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -46,11 +47,11 @@ window.twttr = (function (d, s, id) {
 
     <!-- Add your site or application content here -->
     
-    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarController">
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarController">
       <div class="navbar-inner">
         <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header" >	
+        
+          <div class="navbar-header" href="#">	
           	<!-- Botón de menú en móviles -->
             <button class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <i class="fa fa-bars"></i>
@@ -62,7 +63,6 @@ window.twttr = (function (d, s, id) {
             <a class="navbar-brand" href="#" style="margin-left: auto;margin-right: auto;">
               <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
             </a>
-
             <button type="button" class="MainMenu-smallButton btn btn-default dropdown-toggle pull-right visible-xs" data-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-plus-circle"></i>
               <span class="caret"></span>
@@ -72,24 +72,7 @@ window.twttr = (function (d, s, id) {
               <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
               <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
             </ul>
-            <!-- <button class="MainMenu-smallButton pull-right hidden-sm hidden-md hidden-lg">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-            </button> -->
           </div>
-        
-
-          <!-- <div class="navbar-header pull-right hidden-xs">
-              <button class="MainMenu-button">
-              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-              Crear
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-              </ul>
-          </div> -->
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
 
           <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -106,38 +89,17 @@ window.twttr = (function (d, s, id) {
                 <a href="/#/QuejeseAqui">Quejese Aqui</a>
               </li>
             </ul>
-
             <button class="btn btn-default dropdown-toggle MainMenu-button hidden-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
             <i class="fa fa-plus-circle"></i>
             Crear
             <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+          	</button>
+            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
               <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo</a></li>
               <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
               <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
-          </ul>
-
+            </ul>
           </nav><!-- /.navbar-collapse -->
-
-
-          
-
-          
-<!-- <div class="btn-group pull-right hidden-xs" role="group">
-    <button type="button" class="MainMenu-button btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-    <i class="fa fa-plus-circle"></i>
-              Crear
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo</a></li>
-      <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
-      <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
-    </ul>
-  </div>
-</div> -->
-
         </div>
       </div><!-- /.container-fluid -->
     </nav>
