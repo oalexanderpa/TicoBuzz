@@ -8,48 +8,16 @@
  * Controller of the ticoBuzzApp
  */
 angular.module('ticoBuzzApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.posts = [{
-		titulo:'10 lugares que debes visitar antes de pensar en viajar a otro país',
-		tipo:'Articulo',
-		label:'labelArticulo',
-		icono:'fa fa-newspaper-o',
-		puntos:'8569',
-		comentarios:[
-			'random comment',
-			'random comment',
-			'random comment',
-			'random comment'
-		],
-		imagen:'images/corcovado.jpg'
-	}, {
-		titulo:'¿Qué personaje de la historia de Costa Rica eres?',
-		tipo:'Quiz',
-		label:'labelQuiz',
-		icono:'fa fa-question-circle',
-		puntos:'8569',
-		comentarios:[
-			'random comment',
-			'random comment',
-			'random comment',
-			'random comment'
-		],
-		imagen:'images/juansantamaria.jpg'
-	}, {
-		titulo:'Los 5 momentos de infarto de la sele en el Mundial Brasil 2014',
-		tipo:'Video',
-		label:'labelVideo',
-		icono:'fa fa-film',
-		puntos:'8569',
-		comentarios:[
-			'random comment',
-			'random comment',
-			'random comment',
-			'random comment'
-		],
-		imagen:'images/costaricagrecia.jpg'
-	}];
-  })
+  .controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+  	$scope.posts = [];
+    $http.get('/posts.json').
+	  success(function(data) {
+	  	$scope.posts = data;
+	  }).
+	  error(function(data, status) {
+	  	console.log(status);
+	  });
+  }])
   .filter('titulo', function() {
 	return function(input) {
 	  return input.replace(/ /gi, '-');
