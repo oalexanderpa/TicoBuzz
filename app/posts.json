@@ -1,10 +1,10 @@
-[
+﻿[
 	{
 		"titulo":"10 lugares que debes visitar antes de pensar en viajar a otro país",
 		"tipo":"Articulo",
 		"label":"labelArticulo",
 		"icono":"fa fa-newspaper-o",
-		"puntos":"8569",
+		"votos":"8569",
 		"comentarios":[
 			"random comment",
 			"random comment",
@@ -14,11 +14,11 @@
 		"imagen":"images/corcovado.jpg"
 	}, 
 	{
-		"titulo":"¿Qué personaje de la historia de Costa Rica eres?",
-		"tipo":"Quiz",
-		"label":"labelQuiz",
-		"icono":"fa fa-question-circle",
-		"puntos":"8569",
+		"titulo":"15 personajes que marcaron la historia de Costa Rica",
+		"tipo":"Articulo",
+		"label":"labelArticulo",
+		"icono":"fa fa-newspaper-o",
+		"votos":"8569",
 		"comentarios":[
 			"random comment",
 			"random comment",
@@ -29,10 +29,10 @@
 	},
 	{
 		"titulo":"Los 5 momentos de infarto de la sele en el Mundial Brasil 2014",
-		"tipo":"Video",
-		"label":"labelVideo",
-		"icono":"fa fa-film",
-		"puntos":"8569",
+		"tipo":"Articulo",
+		"label":"labelArticulo",
+		"icono":"fa fa-newspaper-o",
+		"votos":"8569",
 		"comentarios":[
 			"random comment",
 			"random comment",

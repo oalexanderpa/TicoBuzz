@@ -40,87 +40,116 @@ window.twttr = (function (d, s, id) {
 }(document, "script", "twitter-wjs"));
 </script>
 
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
     
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarController">
         <div class="container">
-          <div class="navbar-header" >
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header" >	
+          	<!-- Botón de menú en móviles -->
 
-          <!-- Menu button Mobile -->
-          <div class="dropdown visible-xs">
-                      <button class="btn btn-default dropdown-toggle pull-left MainMenu-button2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-                        <i class="fa fa-bars"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown2" role="menu" aria-labelledby="dropdownMenu2">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-newspaper-o"></i> Artículos</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trophy"></i> Ranking y premios</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user"></i> Iniciar sesión</a></li>
-                      </ul>
-                    </div>
-          <!-- /Menu button Mobile -->
-
-            <!-- Logo Mobile -->
+            <button class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <i class="fa fa-bars"></i>
+              <!-- <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> -->
+            </button>
+           
             <a class="navbar-brand visible-xs" href="#/" style="margin-left: auto;margin-right: auto;">
               <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
             </a>
-            <!-- /Logo Mobile -->
 
-            <!-- Button "Crear" Mobile -->
-            <button type="button" class="MainMenu-smallButton btn btn1 dropdown-toggle pull-right visible-xs" data-toggle="dropdown" aria-expanded="false">
-              <i class="fa fa-pencil"></i>
+            <button type="button" class="MainMenu-smallButton btn btn-default dropdown-toggle pull-right visible-xs" data-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-plus-circle"></i>
               <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu dropdown1 pull-right hidden-md hidden-lg" role="menu">
-              <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo <span class="puntos2"><i class="fa fa-plus-circle"></i> 3 pts</span></a></li>
+            <ul class="dropdown-menu pull-right hidden-md hidden-lg" role="menu">
+              <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo</a></li>
+              <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
+              <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
             </ul>
+            <!-- <button class="MainMenu-smallButton pull-right hidden-sm hidden-md hidden-lg">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            </button> -->
           </div>
-           <!-- /Button "Crear" Mobile -->
-  
+        
 
-        <!-- Menu Button -->
-        <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle pull-left MainMenu-button2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-                        <i class="fa fa-bars"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown2" role="menu" aria-labelledby="dropdownMenu2">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-newspaper-o"></i> Artículos</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trophy"></i> Ranking y premios</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user"></i> Iniciar sesión</a></li>
-                      </ul>
-                    </div>
-          <!-- /Menu Button -->
-         
-         
-            <!-- Logo -->
-       			<a class="navbar-brand" href="#/" style="margin-left: auto;margin-right: auto;">
+          <!-- <div class="navbar-header pull-right hidden-xs">
+              <button class="MainMenu-button">
+              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+              Crear
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+              </ul>
+          </div> -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+
+          <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ 			<a class="navbar-brand" href="#/" style="margin-left: auto;margin-right: auto;">
               <img class="MainMenu-logo" alt="Brand" style="max-width:150px;" src="images/logo.png">
             </a>
-             <!-- /Logo -->
+            <ul class="nav navbar-nav">
+              <li class="MainMenu-item" ng-class="{ active: isActive('/')}">
+                <a href="/#/Articulos"><span class="Tico">Tico</span>Articulos</a>
+              </li>
+              <li class="MainMenu-item">
+                <a href="/#/Quizes"><span class="Tico">Tico</span>Quizes</a>
+              </li>
+              <li class="MainMenu-item">
+                <a href="/#/Videos"><span class="Tico">Tico</span>Videos</a>
+              </li>
+              <!-- <li class="MainMenu-item">
+                <a href="/#/QuejeseAqui">Quejese Aqui</a>
+              </li> -->
+            </ul>
 
-            <!-- Button "Crear" -->
-            <button class="btn btn1 dropdown-toggle MainMenu-button1 hidden-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-            <i class="fa fa-pencil"></i>
+            <button class="btn btn-default dropdown-toggle MainMenu-button hidden-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            <i class="fa fa-plus-circle"></i>
             Crear
             <span class="caret"></span>
           </button>
-          <ul class="dropdown-menu dropdown1 pull-right" role="menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo <span class="puntos2"><i class="fa fa-plus-circle"></i> 3 pts</span></a></li>
+          <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo</a></li>
+              <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
+              <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
           </ul>
-           <!-- /Button "Crear" -->
 
-          </nav>
+          </nav><!-- /.navbar-collapse -->
 
 
-        </div>
+          
+
+          
+<!-- <div class="btn-group pull-right hidden-xs" role="group">
+    <button type="button" class="MainMenu-button btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <i class="fa fa-plus-circle"></i>
+              Crear
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#"><i class="fa fa-newspaper-o"></i> Nuevo Artículo</a></li>
+      <li><a href="#"><i class="fa fa-question-circle"></i>&nbsp Nuevo Quiz</a></li>
+      <li><a href="#"><i class="fa fa-film"></i> Nuevo Video</a></li>
+    </ul>
+  </div>
+</div> -->
+
+        </div><!-- /.container-fluid -->
     </nav>
 
 <div class="container">
     <div class="container">
 		<div class="row">
 			<div class="col-xs-12 social-bar" >
-				<span class="slogan hidden-xs">TicoBuzz.com - El sitio costarricense para compartir, crear y vacilar.</span>
+				<span class="slogan hidden-xs">TB - Contenido que todo tico quiere ver y compartir.</span>
 				<div class="fb-like" data-href="https://www.facebook.com/TicoBuzz" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				<a class="twitter-follow-button"
 				  href="https://twitter.com/ticobuzz"
@@ -142,21 +171,16 @@ window.twttr = (function (d, s, id) {
     
       <div class="col-xs-12 col-sm-4 col-lg-4 bodyRight" ng-controller="PopularesController">
 
-      <div class="tareasSociales">
-        <p class="populares">¡Acumulá puntos y ganá premios!</p>
-        
-        <i class="fa fa-check-circle-o Verde"></i> Visitar TicoBuzz.com <span class="puntos1"><i class="fa fa-plus-circle"></i> 3 pts</span>
-        </br>
-        <i class="fa fa-circle-o gris-claro"></i> Compartir en Facebook <span class="puntos2"><i class="fa fa-plus-circle"></i> 5 pts</span>
-        </br>
-        <i class="fa fa-circle-o gris-claro"></i> Compartir en Twitter <span class="puntos2"><i class="fa fa-plus-circle"></i> 5 pts</span>
-        </br>
-        <i class="fa fa-circle-o gris-claro"></i> Leer un artículo <span class="puntos2"><i class="fa fa-plus-circle"></i> 5 pts</span>
-        </br>
-        <i class="fa fa-circle-o gris-claro"></i> Comentar un artículo <span class="puntos2"><i class="fa fa-plus-circle"></i> 10 pts</span>
-        </br>
-        <button class="rankingButton"><i class="fa fa-trophy"></i> Ver ranking y premios</button>
-      </div>
+        <p class="populares"><i class="fa fa-bolt"></i> Populares</p>
+        <article class="popularArticle" ng-repeat="popular in populares">
+                <figure class="popularArticle-ImageContainer">
+                  <img class="popularArticle-Image" src="{{popular.imagen}}">
+                </figure>
+                <figcaption class="popularArticle-Description">
+                    <h4>{{popular.titulo}}
+                    </h4>
+                </figcaption>
+        </article>
                
 
         <div class="container-fluid">
@@ -170,8 +194,8 @@ window.twttr = (function (d, s, id) {
             <a href="http://www.yahoo.com">Contacto</a> •
             <a href="http://www.yahoo.com">Nuestro Equipo</a>
             </br>
-            <a href="http://www.yahoo.com">Privacidad</a> •
-            <a href="http://www.yahoo.com">Términos</a> 
+            <a href="http://www.yahoo.com">Privacy</a> •
+            <a href="http://www.yahoo.com">Terms</a> 
 
           </footer>
         </div>

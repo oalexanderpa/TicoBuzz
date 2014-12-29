@@ -21,10 +21,11 @@
             <label ng-class="post.label">
               <i ng-class="post.icono"></i>
               {{post.tipo}}
+              <span class="puntos2"><i class="fa fa-plus-circle"></i> 3 pts</span>
             </label>
             <img class="homeArticle-Image" src="{{post.imagen}}">
           </figure>
-          <span class="points">{{post.puntos}} puntos - {{post.comentarios.length}} comentarios</span>
+          <span class="points">{{post.votos}} votos - {{post.comentarios.length}} comentarios</span>
           </br>
           <div class="sharebar">
           <button class="vote-up">
